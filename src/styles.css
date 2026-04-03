@@ -91,3 +91,12 @@ footer .link-title:hover {
   height: auto;
   border-radius: 10px;
 }
+.image-det {
+  width: 24rem;
+  height: auto;
+  border-radius: 10px;
+}
+
+.box-content {
+	padding: 0 2rem 0 2rem
+}
