@@ -7,11 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "parcel:dev": "parcel",
     "parcel:build": "parcel build",
-    "clean": "rimraf dist .parcel-cache",
+    "clean": "rimraf .parcel-cache dist",
     "start": "npm-run-all clean parcel:dev",
     "build": "npm-run-all clean parcel:build"
   },
-  "browserlist": [
+  "browserslist": [
     "last 10 years",
     "not dead"
   ],

@@ -1,11 +1,77 @@
 :root {
-	--color-fondo: #fffff8; /* marfil claro */	
+	--color-fondo: #FFFFFF; /* blanco */
+	--color-verde-bandera: #009246;
+	--color-rojo-bandera: #CE2B37;
 }
 
 body {
   height: 100vh;  
-  background: var(--color-fondo);
+  background: var(--color-fondo);  
 }
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-fondo);
+}
+
+header {
+	background-color: var(--color-verde-bandera);
+    color: white;
+    text-align: left;
+    padding: 20px 20px;	
+}
+
+footer {
+	background-color: var(--color-rojo-bandera);
+    color: white;
+    text-align: left;
+    padding: 20px 20px;
+}
+
+main {
+	flex: 1;
+}
+
+h1 {
+	font-size: 5rem;
+}
+
+.link-title {
+	text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+header .link-title {
+	text-decoration: none;
+    color: #333;
+	color: var(--color-fondo);
+    transition: color 0.1s;
+}
+
+footer .link-title {
+	text-decoration: none;
+    color: #333;
+	color: var(--color-fondo);
+    transition: color 0.3s;
+}
+
+
+.link-title:hover {
+	color: #e74c3c;
+}
+
+footer .link-title:hover {
+	color: #000000;
+}
+
 
 .text-centred {
 	text-align: center;
