@@ -43,6 +43,10 @@ h1 {
 	font-size: 5rem;
 }
 
+ul {
+  list-style: none;
+}
+
 .link-title {
 	text-decoration: none;
     color: #333;
@@ -80,4 +84,10 @@ footer .link-title:hover {
 .box-centred-v {
 	display: flex;
 	justify-content: center;
+}
+
+.image-cat {
+  width: 12rem;
+  height: auto;
+  border-radius: 10px;
 }
