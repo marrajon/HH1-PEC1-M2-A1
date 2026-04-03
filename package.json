@@ -2,7 +2,7 @@
   "name": "a1",
   "version": "1.0.0",
   "description": "",
-  "source": "src/index.html",
+  "source": "src/*.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
 	"parcel:dev": "parcel",
@@ -12,6 +12,10 @@
     "start": "npm-run-all clean parcel:dev",
     "build": "npm-run-all clean parcel:build"
   },
+  "browserlist": [
+	"last 10 years",
+	"not dead"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
