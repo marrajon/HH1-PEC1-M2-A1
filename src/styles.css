@@ -1,10 +1,17 @@
-h1{
-  color: hotpink;
-  font-family: cursive;
+:root {
+	--color-fondo: #fffff8; /* marfil claro */	
 }
 
 body {
-  height: 100vh;
-  color: #1f1f1f;
-  background: linear-gradient(to bottom, #bada55, #c0ffee);
+  height: 100vh;  
+  background: var(--color-fondo);
+}
+
+.text-centred {
+	text-align: center;
+}
+
+.box-centred-v {
+	display: flex;
+	justify-content: center;
 }
