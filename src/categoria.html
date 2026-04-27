@@ -4,19 +4,171 @@
     <include src="./src/head.html"></include>
   </head>
   <body>
-	<include src="./src/header.html"></include>
-	<main>
-	  <ul>
-		<li>
-		  <img src="images/maca-bolonesa.jpg" alt="Plato de macarrones boloñesa" class="image-cat" >
-		  <h2><a href="det1.html" class="link-title">Macarrones boloñesa</a></h2>
-		</li>
-		<li>
-		  <img src="images/espagueti-pesto.jpg" alt="Plato de espaguetis al pesto" class="image-cat" >
-		  <h2><a href="det2.html" class="link-title">Espaguetis al pesto</a></h2>
-		</li>
-	  </ul>
-	</main>
-	<include src="./src/footer.html"></include>
+    <include src="./src/header.html"></include>
+    <main class="cat box-centred-h">
+      <div>
+        <div class="grid">
+          <div class="card">
+            <a href="det1.html">
+              <picture>
+                <source
+                  srcset="
+                    images/maca-bolonesa.jpg?width=450&as=avif  1x,
+                    images/maca-bolonesa.jpg?width=900&as=avif  2x,
+                    images/maca-bolonesa.jpg?width=1350&as=avif 3x
+                  "
+                  type="image/avif"
+                />
+
+                <source
+                  srcset="
+                    images/maca-bolonesa.jpg?width=450&as=webp  1x,
+                    images/maca-bolonesa.jpg?width=900&as=webp  2x,
+                    images/maca-bolonesa.jpg?width=1350&as=webp 3x
+                  "
+                  type="image/webp"
+                />
+
+                <img src="images/maca-bolonesa.jpg?width=450" alt="Plato de macarrones boloñesa" class="image-cat" />
+              </picture>
+            </a>
+            <h2><a href="det1.html" class="link-title">Macarrones boloñesa</a></h2>
+          </div>
+
+          <div class="card">
+            <a href="det2.html">
+              <picture>
+                <source
+                  srcset="
+                    images/espagueti-pesto.jpg?width=450&as=avif  1x,
+                    images/espagueti-pesto.jpg?width=900&as=avif  2x,
+                    images/espagueti-pesto.jpg?width=1350&as=avif 3x
+                  "
+                  type="image/avif"
+                />
+
+                <source
+                  srcset="
+                    images/espagueti-pesto.jpg?width=450&as=webp  1x,
+                    images/espagueti-pesto.jpg?width=900&as=webp  2x,
+                    images/espagueti-pesto.jpg?width=1350&as=webp 3x
+                  "
+                  type="image/webp"
+                />
+
+                <img src="images/espagueti-pesto.jpg?width=450" alt="Plato de espaguetis al pesto" class="image-det" />
+              </picture>
+            </a>
+            <h2><a href="det2.html" class="link-title">Espaguetis al pesto</a></h2>
+          </div>
+
+          <div class="card">
+            <picture>
+              <source
+                srcset="
+                  images/tiramisu.jpg?width=450&as=avif  1x,
+                  images/tiramisu.jpg?width=900&as=avif  2x,
+                  images/tiramisu.jpg?width=1350&as=avif 3x
+                "
+                type="image/avif"
+              />
+
+              <source
+                srcset="
+                  images/tiramisu.jpg?width=450&as=webp  1x,
+                  images/tiramisu.jpg?width=900&as=webp  2x,
+                  images/tiramisu.jpg?width=1350&as=webp 3x
+                "
+                type="image/webp"
+              />
+
+              <img src="images/tiramisu.jpg?width=450" alt="Bandeja con porciones de tiramisu" class="image-cat" />
+            </picture>
+            <h2><a href="" class="link-title">Tiramisu</a></h2>
+          </div>
+
+          <div class="card">
+            <picture>
+              <source
+                srcset="
+                  images/osobuco_milanesa.jpg?width=450&as=avif  1x,
+                  images/osobuco_milanesa.jpg?width=900&as=avif  2x,
+                  images/osobuco_milanesa.jpg?width=1350&as=avif 3x
+                "
+                type="image/avif"
+              />
+
+              <source
+                srcset="
+                  images/osobuco_milanesa.jpg?width=450&as=webp  1x,
+                  images/osobuco_milanesa.jpg?width=900&as=webp  2x,
+                  images/osobuco_milanesa.jpg?width=1350&as=webp 3x
+                "
+                type="image/webp"
+              />
+
+              <img src="images/osobuco_milanesa.jpg?width=450" alt="Cazuela de osobuco milanesa" class="image-cat" />
+            </picture>
+            <h2><a href="" class="link-title">Osobuco milanesa</a></h2>
+          </div>
+
+          <div class="card">
+            <picture>
+              <source
+                srcset="
+                  images/lasagne.jpg?width=450&as=avif  1x,
+                  images/lasagne.jpg?width=900&as=avif  2x,
+                  images/lasagne.jpg?width=1350&as=avif 3x
+                "
+                type="image/avif"
+              />
+
+              <source
+                srcset="
+                  images/lasagne.jpg?width=450&as=webp  1x,
+                  images/lasagne.jpg?width=900&as=webp  2x,
+                  images/lasagne.jpg?width=1350&as=webp 3x
+                "
+                type="image/webp"
+              />
+
+              <img src="images/lasagne.jpg?width=450" alt="Porción de lasaña en un plato" class="image-cat" />
+            </picture>
+            <h2><a href="" class="link-title">Lasaña de carne</a></h2>
+          </div>
+
+          <div class="card">
+            <picture>
+              <source
+                srcset="
+                  images/pizza_fungi.jpg?width=450&as=avif  1x,
+                  images/pizza_fungi.jpg?width=900&as=avif  2x,
+                  images/pizza_fungi.jpg?width=1350&as=avif 3x
+                "
+                type="image/avif"
+              />
+
+              <source
+                srcset="
+                  images/pizza_fungi.jpg?width=450&as=webp  1x,
+                  images/pizza_fungi.jpg?width=900&as=webp  2x,
+                  images/pizza_fungi.jpg?width=1350&as=webp 3x
+                "
+                type="image/webp"
+              />
+
+              <img
+                src="images/pizza_fungi.jpg?width=450"
+                alt="Pizza fungi con ingredientes alrededor"
+                class="image-cat"
+              />
+            </picture>
+            <h2><a href="" class="link-title">Pizza fungi</a></h2>
+          </div>
+        </div>
+        <!-- grid -->
+      </div>
+    </main>
+    <include src="./src/footer.html"></include>
   </body>
 </html>
