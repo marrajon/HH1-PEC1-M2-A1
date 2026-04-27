@@ -10,7 +10,73 @@
         <h2 class="text-centred">Espagueti al pesto</h2>
         <article>
           <div class="box-centred-h">
-            <img src="images/espagueti-pesto.jpg" alt="Plato de espaguetis al pesto" class="image-det" />
+            <picture>
+              <!-- MÓVIL: hasta 480px (dirección de arte: zoom) -->
+              <source
+                media="(max-width: 480px)"
+                type="image/avif"
+                srcset="
+                  images/espagueti-pesto-zoom.jpg?width=450&as=avif  1x,
+                  images/espagueti-pesto-zoom.jpg?width=900&as=avif  2x,
+                  images/espagueti-pesto-zoom.jpg?width=1350&as=avif 3x
+                "
+              />
+
+              <source
+                media="(max-width: 480px)"
+                type="image/webp"
+                srcset="
+                  images/espagueti-pesto-zoom.jpg?width=450&as=webp  1x,
+                  images/espagueti-pesto-zoom.jpg?width=900&as=webp  2x,
+                  images/espagueti-pesto-zoom.jpg?width=1350&as=webp 3x
+                "
+              />
+
+              <!-- TABLET: 481px a 820px -->
+              <source
+                media="(min-width: 481px) and (max-width: 820px)"
+                type="image/avif"
+                srcset="
+                  images/espagueti-pesto.jpg?width=1024&as=avif 1x,
+                  images/espagueti-pesto.jpg?width=2048&as=avif 2x,
+                  images/espagueti-pesto.jpg?width=3072&as=avif 3x
+                "
+              />
+
+              <source
+                media="(min-width: 481px) and (max-width: 820px)"
+                type="image/webp"
+                srcset="
+                  images/espagueti-pesto.jpg?width=1024&as=webp 1x,
+                  images/espagueti-pesto.jpg?width=2048&as=webp 2x,
+                  images/espagueti-pesto.jpg?width=3072&as=webp 3x
+                "
+              />
+
+              <!-- DESKTOP: 821px en adelante -->
+              <source
+                media="(min-width: 821px)"
+                type="image/avif"
+                srcset="
+                  images/espagueti-pesto.jpg?width=1920&as=avif 1x,
+                  images/espagueti-pesto.jpg?width=3840&as=avif 2x,
+                  images/espagueti-pesto.jpg?width=5760&as=avif 3x
+                "
+              />
+
+              <source
+                media="(min-width: 821px)"
+                type="image/webp"
+                srcset="
+                  images/espagueti-pesto.jpg?width=1920&as=webp 1x,
+                  images/espagueti-pesto.jpg?width=3840&as=webp 2x,
+                  images/espagueti-pesto.jpg?width=5760&as=webp 3x
+                "
+              />
+
+              <!-- fallback -->
+              <img src="images/espagueti-pesto.jpg?width=1024" alt="Plato de espaguetis al pesto" class="image-det" />
+            </picture>
           </div>
 
           <section>
@@ -18,7 +84,52 @@
 
             <div class="part">
               <div class="box-centred-h">
-                <img src="images/coliseo.jpg" alt="Coliseo de Roma" class="image-cat" />
+                <picture>
+                  <!-- MÓVIL + TABLET: hasta 820px -->
+                  <source
+                    media="(max-width: 820px)"
+                    type="image/avif"
+                    srcset="
+                      images/coliseo.jpg?width=220&as=avif 1x,
+                      images/coliseo.jpg?width=440&as=avif 2x,
+                      images/coliseo.jpg?width=660&as=avif 3x
+                    "
+                  />
+
+                  <source
+                    media="(max-width: 820px)"
+                    type="image/webp"
+                    srcset="
+                      images/coliseo.jpg?width=220&as=webp 1x,
+                      images/coliseo.jpg?width=440&as=webp 2x,
+                      images/coliseo.jpg?width=660&as=webp 3x
+                    "
+                  />
+
+                  <!-- DESKTOP: 821px en adelante -->
+                  <source
+                    media="(min-width: 821px)"
+                    type="image/avif"
+                    srcset="
+                      images/coliseo.jpg?width=450&as=avif  1x,
+                      images/coliseo.jpg?width=900&as=avif  2x,
+                      images/coliseo.jpg?width=1350&as=avif 3x
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 821px)"
+                    type="image/webp"
+                    srcset="
+                      images/coliseo.jpg?width=450&as=webp  1x,
+                      images/coliseo.jpg?width=900&as=webp  2x,
+                      images/coliseo.jpg?width=1350&as=webp 3x
+                    "
+                  />
+
+                  <!-- fallback -->
+                  <img src="images/coliseo.jpg?width=220" alt="Coliseo de Roma" class="image-cat" />
+                </picture>
               </div>
               <div class="part-text">
                 <h3 class="text-centred">Historia</h3>
@@ -44,7 +155,52 @@
                 </p>
               </div>
               <div class="box-centred-h">
-                <img src="images/ingredientes.jpg" alt="Ingredientes de receta" class="image-cat" />
+                <picture>
+                  <!-- MÓVIL + TABLET: hasta 820px -->
+                  <source
+                    media="(max-width: 820px)"
+                    type="image/avif"
+                    srcset="
+                      images/ingredientes.jpg?width=220&as=avif 1x,
+                      images/ingredientes.jpg?width=440&as=avif 2x,
+                      images/ingredientes.jpg?width=660&as=avif 3x
+                    "
+                  />
+
+                  <source
+                    media="(max-width: 820px)"
+                    type="image/webp"
+                    srcset="
+                      images/ingredientes.jpg?width=220&as=webp 1x,
+                      images/ingredientes.jpg?width=440&as=webp 2x,
+                      images/ingredientes.jpg?width=660&as=webp 3x
+                    "
+                  />
+
+                  <!-- DESKTOP: 821px en adelante -->
+                  <source
+                    media="(min-width: 821px)"
+                    type="image/avif"
+                    srcset="
+                      images/ingredientes.jpg?width=450&as=avif  1x,
+                      images/ingredientes.jpg?width=900&as=avif  2x,
+                      images/ingredientes.jpg?width=1350&as=avif 3x
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 821px)"
+                    type="image/webp"
+                    srcset="
+                      images/ingredientes.jpg?width=450&as=webp  1x,
+                      images/ingredientes.jpg?width=900&as=webp  2x,
+                      images/ingredientes.jpg?width=1350&as=webp 3x
+                    "
+                  />
+
+                  <!-- fallback -->
+                  <img src="images/ingredientes.jpg?width=220" alt="Ingredientes de receta" class="image-cat" />
+                </picture>
               </div>
             </div>
           </section>
