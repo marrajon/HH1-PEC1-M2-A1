@@ -191,3 +191,23 @@ main.det .trailer iframe {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* ----- ANIMACIONES ---------*/
+.anima-1 {
+  animation: roll 7s linear infinite;
+  width: auto;
+  height: auto;
+}
+
+@keyframes roll {
+  from {
+    transform: translateX(-220px) rotate(0deg);
+  }
+  to {
+    transform: translateX(100vw) rotate(1440deg);
+  }
+}
+
+.circle {
+  clip-path: circle(35% at 50% 50%);
+}
