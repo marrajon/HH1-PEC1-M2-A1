@@ -7,6 +7,11 @@
 body {
   height: 100vh;
   background: var(--color-fondo);
+  line-height: 1.5;
+}
+
+p {
+  max-width: 65ch; /* accesibilidad */
 }
 
 html {
@@ -28,6 +33,10 @@ header {
   padding: 20px 20px;
 }
 
+header h2 {
+  display: inline;
+}
+
 footer {
   background-color: var(--color-rojo-bandera);
   color: white;
@@ -39,7 +48,7 @@ main {
   flex: 1;
 }
 
-h1 {
+.index h1 {
   font-size: 12vw;
 }
 /*
@@ -51,13 +60,19 @@ ul {
   text-decoration: none;
   color: #333;
   transition: color 0.3s;
+  margin-right: 5vw;
 }
 
 header .link-title {
   text-decoration: none;
-  color: #333;
-  color: var(--color-fondo);
+  color: #fff;
+  /*color: var(--color-fondo);*/
   transition: color 0.1s;
+}
+
+.pag-inicio header .menu-inicio,
+.pag-categoria header .menu-cat {
+  color: #ffe066;
 }
 
 footer .link-title {
@@ -71,7 +86,8 @@ footer .link-title {
   color: #e74c3c;
 }
 
-footer .link-title:hover {
+footer .link-title:hover,
+header .link-title:hover {
   color: #000000;
 }
 
