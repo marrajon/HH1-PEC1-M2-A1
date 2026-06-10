@@ -108,6 +108,7 @@ header .link-title:hover {
   width: 100%;
   height: auto;
   border-radius: 10px;
+  aspect-ratio: 346 / 231;
 }
 
 .det .image-cat {
