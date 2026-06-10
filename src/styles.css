@@ -115,12 +115,14 @@ header .link-title:hover {
   width: 25vw;
   height: auto;
   border-radius: 10px;
+  aspect-ratio: 98 / 55; /* Imagenes de cada seccion de la receta*/
 }
 
 .image-det {
   width: 100%;
   height: auto;
   border-radius: 10px;
+  aspect-ratio: 329 / 325; /* Imagen hero movil art direction */
 }
 
 .box-content {
@@ -179,6 +181,9 @@ main.det .trailer iframe {
 
 /* ---------- TABLET ---------- */
 @media (min-width: 481px) {
+  .image-det {
+    aspect-ratio: 1376 / 917; /* aprox 1,5 */
+  }
   .cat .grid {
     grid-template-columns: repeat(2, 1fr);
   }
