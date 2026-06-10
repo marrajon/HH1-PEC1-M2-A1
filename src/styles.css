@@ -179,6 +179,11 @@ main.det .trailer iframe {
 }
 */
 
+.box-centred-h picture {
+  display: block;
+  width: 100%;
+}
+
 /* ---------- TABLET ---------- */
 @media (min-width: 481px) {
   .image-det {
