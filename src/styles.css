@@ -48,6 +48,14 @@ main {
   flex: 1;
 }
 
+.icon {
+  width: 2em;
+  height: 2em;
+  fill: currentColor;
+  margin-bottom: -5px;
+  margin-right: 10px;
+}
+
 .index h1 {
   font-size: 12vw;
 }

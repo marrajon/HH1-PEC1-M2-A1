@@ -1,4 +1,12 @@
-import '@fortawesome/fontawesome-free/css/all.css';
+// import '@fortawesome/fontawesome-free/css/all.css';
+/*
+import { dom, library } from '@fortawesome/fontawesome-svg-core';
+import { faBowlFood, faHome, faKitchenSet, faPizzaSlice } from '@fortawesome/free-solid-svg-icons';
+
+library.add(faPizzaSlice, faBowlFood, faHome, faKitchenSet);
+
+dom.watch();
+*/
 
 // script de sleccion aleatoria de imagen de la animacion de index.html
 //
