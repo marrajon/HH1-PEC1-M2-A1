@@ -200,7 +200,7 @@
                   />
 
                   <!-- fallback -->
-                  <img src="images/ingredientes.jpg?width=220" alt="" class="image-cat" />
+                  <img loading="lazy" src="images/ingredientes.jpg?width=220" alt="" class="image-cat" />
                 </picture>
               </div>
             </div>
@@ -211,7 +211,54 @@
 
             <div class="part">
               <div class="box-centred-h">
-                <img src="images/preparacion.jpg" alt="" class="image-cat" />
+                <picture>
+                  <!-- MÓVIL + TABLET: hasta 820px -->
+                  <source
+                    media="(max-width: 820px)"
+                    type="image/avif"
+                    srcset="
+                      images/preparacion.jpg?width=220&as=avif 1x,
+                      images/preparacion.jpg?width=450&as=avif 2x,
+                      images/preparacion.jpg?width=660&as=avif 3x
+                    "
+                  />
+
+                  <source
+                    media="(max-width: 820px)"
+                    type="image/webp"
+                    srcset="
+                      images/preparacion.jpg?width=220&as=webp 1x,
+                      images/preparacion.jpg?width=450&as=webp 2x,
+                      images/preparacion.jpg?width=660&as=webp 3x
+                    "
+                  />
+
+                  <!-- DESKTOP: 821px en adelante -->
+                  <source
+                    media="(min-width: 821px)"
+                    type="image/avif"
+                    srcset="
+                      images/preparacion.jpg?width=450&as=avif  1x,
+                      images/preparacion.jpg?width=900&as=avif  2x,
+                      images/preparacion.jpg?width=1350&as=avif 3x
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 821px)"
+                    type="image/webp"
+                    srcset="
+                      images/preparacion.jpg?width=450&as=webp  1x,
+                      images/preparacion.jpg?width=900&as=webp  2x,
+                      images/preparacion.jpg?width=1350&as=webp 3x
+                    "
+                  />
+
+                  <!-- fallback -->
+                  <img loading="lazy" src="images/preparacion.jpg?width=220" alt="" class="image-cat" />
+                </picture>
+
+                <!--<img loading="lazy" src="images/preparacion.jpg" alt="" class="image-cat" />-->
               </div>
               <div class="part-text">
                 <h3 class="text-centred">Preparación</h3>
@@ -227,6 +274,7 @@
             <p>A continuación puede ver un vídeo que describe la preparación de esta receta.</p>
             <figure class="trailer">
               <iframe
+                loading="lazy"
                 src="https://www.youtube.com/embed/yS6DkrVC5pA"
                 title="Elaboración de espaguetis al pesto"
                 allow="

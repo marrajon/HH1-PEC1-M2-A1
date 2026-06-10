@@ -1,5 +1,9 @@
 import '@fortawesome/fontawesome-free/css/all.css';
 
+// script de sleccion aleatoria de imagen de la animacion de index.html
+//
+// se usa import para que el bundler haga la optimización de
+// las imágenes
 import plato2 from 'url:./images/espagueti-pesto.jpg?width=220';
 import plato3 from 'url:./images/lasagne.jpg?width=220';
 import plato1 from 'url:./images/maca-bolonesa.jpg?width=220';
