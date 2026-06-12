@@ -2,6 +2,34 @@
 <html lang="es">
   <head>
     <include src="./src/head.html"></include>
+    <!-- Preload de imagen principal -->
+    <!-- Movil -->
+    <link
+      rel="preload"
+      as="image"
+      media="(max-width: 480px)"
+      imagesrcset="
+        images/maca-bolonesa-zoom.jpg?width=450&as=avif&quality=40 450w,
+        images/maca-bolonesa-zoom.jpg?width=900&as=avif&quality=40 900w,
+        images/maca-bolonesa-zoom.jpg?width=1350&as=avif&quality=40 1350w
+      "
+      imagesizes="80vw"
+    />
+    <!-- Preload Desktop y Tablet -->
+    <link
+      rel="preload"
+      as="image"
+      media="(min-width: 481px)"
+      imagesrcset="
+        images/maca-bolonesa.jpg?width=1024&as=avif&quality=40 1024w,
+        images/maca-bolonesa.jpg?width=1600&as=avif&quality=40 1600w,
+        images/maca-bolonesa.jpg?width=2000&as=avif&quality=40 2000w
+      "
+      imagesizes="        
+        (max-width: 820px) 90vw,
+        80vw
+      "
+    />
   </head>
   <body class="pag-detalle">
     <include src="./src/header.html"></include>
@@ -17,9 +45,9 @@
                 media="(max-width: 480px)"
                 type="image/avif"
                 srcset="
-                  images/maca-bolonesa-zoom.jpg?width=450&as=avif  1x,
-                  images/maca-bolonesa-zoom.jpg?width=900&as=avif  2x,
-                  images/maca-bolonesa-zoom.jpg?width=1350&as=avif 3x
+                  images/maca-bolonesa-zoom.jpg?width=450&as=avif&quality=40   450w,
+                  images/maca-bolonesa-zoom.jpg?width=900&as=avif&quality=40   900w,
+                  images/maca-bolonesa-zoom.jpg?width=1350&as=avif&quality=40 1350w
                 "
               />
 
@@ -27,9 +55,9 @@
                 media="(max-width: 480px)"
                 type="image/webp"
                 srcset="
-                  images/maca-bolonesa-zoom.jpg?width=450&as=webp  1x,
-                  images/maca-bolonesa-zoom.jpg?width=900&as=webp  2x,
-                  images/maca-bolonesa-zoom.jpg?width=1350&as=webp 3x
+                  images/maca-bolonesa-zoom.jpg?width=450&as=webp&quality=40   450w,
+                  images/maca-bolonesa-zoom.jpg?width=900&as=webp&quality=40   900w,
+                  images/maca-bolonesa-zoom.jpg?width=1350&as=webp&quality=40 1350w
                 "
               />
 
@@ -38,9 +66,9 @@
                 media="(min-width: 481px) and (max-width: 820px)"
                 type="image/avif"
                 srcset="
-                  images/maca-bolonesa.jpg?width=1024&as=avif 1x,
-                  images/maca-bolonesa.jpg?width=2048&as=avif 2x,
-                  images/maca-bolonesa.jpg?width=3072&as=avif 3x
+                  images/maca-bolonesa.jpg?width=1024&as=avif&quality=40 1024w,
+                  images/maca-bolonesa.jpg?width=1600&as=avif&quality=40 1600w,
+                  images/maca-bolonesa.jpg?width=2000&as=avif&quality=40 2000w
                 "
               />
 
@@ -48,9 +76,9 @@
                 media="(min-width: 481px) and (max-width: 820px)"
                 type="image/webp"
                 srcset="
-                  images/maca-bolonesa.jpg?width=1024&as=webp 1x,
-                  images/maca-bolonesa.jpg?width=2048&as=webp 2x,
-                  images/maca-bolonesa.jpg?width=3072&as=webp 3x
+                  images/maca-bolonesa.jpg?width=1024&as=webp&quality=40 1024w,
+                  images/maca-bolonesa.jpg?width=1600&as=webp&quality=40 1600w,
+                  images/maca-bolonesa.jpg?width=2000&as=webp&quality=40 2000w
                 "
               />
 
@@ -59,9 +87,9 @@
                 media="(min-width: 821px)"
                 type="image/avif"
                 srcset="
-                  images/maca-bolonesa.jpg?width=1920&as=avif 1x,
-                  images/maca-bolonesa.jpg?width=3840&as=avif 2x,
-                  images/maca-bolonesa.jpg?width=5760&as=avif 3x
+                  images/maca-bolonesa.jpg?width=1024&as=avif&quality=40 1024w,
+                  images/maca-bolonesa.jpg?width=1600&as=avif&quality=40 1600w,
+                  images/maca-bolonesa.jpg?width=2000&as=avif&quality=40 2000w
                 "
               />
 
@@ -69,14 +97,20 @@
                 media="(min-width: 821px)"
                 type="image/webp"
                 srcset="
-                  images/maca-bolonesa.jpg?width=1920&as=webp 1x,
-                  images/maca-bolonesa.jpg?width=3840&as=webp 2x,
-                  images/maca-bolonesa.jpg?width=5760&as=webp 3x
+                  images/maca-bolonesa.jpg?width=1024&as=webp&quality=40 1024w,
+                  images/maca-bolonesa.jpg?width=1600&as=webp&quality=40 1600w,
+                  images/maca-bolonesa.jpg?width=2000&as=webp&quality=40 2000w
                 "
               />
 
               <!-- fallback -->
-              <img src="images/maca-bolonesa.jpg?width=1024" alt="Plato de macarrones boloñesa" class="image-det" />
+              <img
+                fetchpriority="high"
+                sizes="80vw"
+                src="images/maca-bolonesa.jpg?width=1024"
+                alt="Plato de macarrones boloñesa"
+                class="image-det"
+              />
             </picture>
           </div>
 
@@ -91,9 +125,9 @@
                     media="(max-width: 820px)"
                     type="image/avif"
                     srcset="
-                      images/coliseo.jpg?width=220&as=avif 1x,
-                      images/coliseo.jpg?width=450&as=avif 2x,
-                      images/coliseo.jpg?width=660&as=avif 3x
+                      images/coliseo.jpg?width=220&as=avif&quality=40 220w,
+                      images/coliseo.jpg?width=450&as=avif&quality=40 450w,
+                      images/coliseo.jpg?width=660&as=avif&quality=40 660w
                     "
                   />
 
@@ -101,9 +135,9 @@
                     media="(max-width: 820px)"
                     type="image/webp"
                     srcset="
-                      images/coliseo.jpg?width=220&as=webp 1x,
-                      images/coliseo.jpg?width=450&as=webp 2x,
-                      images/coliseo.jpg?width=660&as=webp 3x
+                      images/coliseo.jpg?width=220&as=webp&quality=40 220w,
+                      images/coliseo.jpg?width=450&as=webp&quality=40 450w,
+                      images/coliseo.jpg?width=660&as=webp&quality=40 660w
                     "
                   />
 
@@ -112,9 +146,9 @@
                     media="(min-width: 821px)"
                     type="image/avif"
                     srcset="
-                      images/coliseo.jpg?width=450&as=avif  1x,
-                      images/coliseo.jpg?width=900&as=avif  2x,
-                      images/coliseo.jpg?width=1350&as=avif 3x
+                      images/coliseo.jpg?width=450&as=avif&quality=40   450w,
+                      images/coliseo.jpg?width=900&as=avif&quality=40   900w,
+                      images/coliseo.jpg?width=1350&as=avif&quality=40 1350w
                     "
                   />
 
@@ -122,14 +156,23 @@
                     media="(min-width: 821px)"
                     type="image/webp"
                     srcset="
-                      images/coliseo.jpg?width=450&as=webp  1x,
-                      images/coliseo.jpg?width=900&as=webp  2x,
-                      images/coliseo.jpg?width=1350&as=webp 3x
+                      images/coliseo.jpg?width=450&as=webp&quality=40   450w,
+                      images/coliseo.jpg?width=900&as=webp&quality=40   900w,
+                      images/coliseo.jpg?width=1350&as=webp&quality=40 1350w
                     "
                   />
 
                   <!-- fallback -->
-                  <img src="images/coliseo.jpg?width=220" alt="" class="image-cat" />
+                  <img
+                    sizes="
+                      (max-width: 480px) 25vw,
+                      (max-width: 820px) 20vw,
+                      20vw
+                    "
+                    src="images/coliseo.jpg?width=220"
+                    alt=""
+                    class="image-cat"
+                  />
                 </picture>
               </div>
               <div class="part-text">
@@ -162,9 +205,9 @@
                     media="(max-width: 820px)"
                     type="image/avif"
                     srcset="
-                      images/ingredientes.jpg?width=220&as=avif 1x,
-                      images/ingredientes.jpg?width=450&as=avif 2x,
-                      images/ingredientes.jpg?width=660&as=avif 3x
+                      images/ingredientes.jpg?width=220&as=avif&quality=40 220w,
+                      images/ingredientes.jpg?width=450&as=avif&quality=40 450w,
+                      images/ingredientes.jpg?width=660&as=avif&quality=40 660w
                     "
                   />
 
@@ -172,9 +215,9 @@
                     media="(max-width: 820px)"
                     type="image/webp"
                     srcset="
-                      images/ingredientes.jpg?width=220&as=webp 1x,
-                      images/ingredientes.jpg?width=450&as=webp 2x,
-                      images/ingredientes.jpg?width=660&as=webp 3x
+                      images/ingredientes.jpg?width=220&as=webp&quality=40 220w,
+                      images/ingredientes.jpg?width=450&as=webp&quality=40 450w,
+                      images/ingredientes.jpg?width=660&as=webp&quality=40 660w
                     "
                   />
 
@@ -183,9 +226,9 @@
                     media="(min-width: 821px)"
                     type="image/avif"
                     srcset="
-                      images/ingredientes.jpg?width=450&as=avif  1x,
-                      images/ingredientes.jpg?width=900&as=avif  2x,
-                      images/ingredientes.jpg?width=1350&as=avif 3x
+                      images/ingredientes.jpg?width=450&as=avif&quality=40   450w,
+                      images/ingredientes.jpg?width=900&as=avif&quality=40   900w,
+                      images/ingredientes.jpg?width=1350&as=avif&quality=40 1350w
                     "
                   />
 
@@ -193,14 +236,24 @@
                     media="(min-width: 821px)"
                     type="image/webp"
                     srcset="
-                      images/ingredientes.jpg?width=450&as=webp  1x,
-                      images/ingredientes.jpg?width=900&as=webp  2x,
-                      images/ingredientes.jpg?width=1350&as=webp 3x
+                      images/ingredientes.jpg?width=450&as=webp&quality=40   450w,
+                      images/ingredientes.jpg?width=900&as=webp&quality=40   900w,
+                      images/ingredientes.jpg?width=1350&as=webp&quality=40 1350w
                     "
                   />
 
                   <!-- fallback -->
-                  <img loading="lazy" src="images/ingredientes.jpg?width=220" alt="" class="image-cat" />
+                  <img
+                    sizes="
+                      (max-width: 480px) 25vw,
+                      (max-width: 820px) 20vw,
+                      20vw
+                    "
+                    loading="lazy"
+                    src="images/ingredientes.jpg?width=220"
+                    alt=""
+                    class="image-cat"
+                  />
                 </picture>
               </div>
             </div>
@@ -217,9 +270,9 @@
                     media="(max-width: 820px)"
                     type="image/avif"
                     srcset="
-                      images/preparacion.jpg?width=220&as=avif 1x,
-                      images/preparacion.jpg?width=450&as=avif 2x,
-                      images/preparacion.jpg?width=660&as=avif 3x
+                      images/preparacion.jpg?width=220&as=avif&quality=40 220w,
+                      images/preparacion.jpg?width=450&as=avif&quality=40 450w,
+                      images/preparacion.jpg?width=660&as=avif&quality=40 660w
                     "
                   />
 
@@ -227,9 +280,9 @@
                     media="(max-width: 820px)"
                     type="image/webp"
                     srcset="
-                      images/preparacion.jpg?width=220&as=webp 1x,
-                      images/preparacion.jpg?width=450&as=webp 2x,
-                      images/preparacion.jpg?width=660&as=webp 3x
+                      images/preparacion.jpg?width=220&as=webp&quality=40 220w,
+                      images/preparacion.jpg?width=450&as=webp&quality=40 450w,
+                      images/preparacion.jpg?width=660&as=webp&quality=40 660w
                     "
                   />
 
@@ -238,9 +291,9 @@
                     media="(min-width: 821px)"
                     type="image/avif"
                     srcset="
-                      images/preparacion.jpg?width=450&as=avif  1x,
-                      images/preparacion.jpg?width=900&as=avif  2x,
-                      images/preparacion.jpg?width=1350&as=avif 3x
+                      images/preparacion.jpg?width=450&as=avif&quality=40   450w,
+                      images/preparacion.jpg?width=900&as=avif&quality=40   900w,
+                      images/preparacion.jpg?width=1350&as=avif&quality=40 1350w
                     "
                   />
 
@@ -248,14 +301,24 @@
                     media="(min-width: 821px)"
                     type="image/webp"
                     srcset="
-                      images/preparacion.jpg?width=450&as=webp  1x,
-                      images/preparacion.jpg?width=900&as=webp  2x,
-                      images/preparacion.jpg?width=1350&as=webp 3x
+                      images/preparacion.jpg?width=450&as=webp&quality=40   450w,
+                      images/preparacion.jpg?width=900&as=webp&quality=40   900w,
+                      images/preparacion.jpg?width=1350&as=webp&quality=40 1350w
                     "
                   />
 
                   <!-- fallback -->
-                  <img loading="lazy" src="images/preparacion.jpg?width=220" alt="" class="image-cat" />
+                  <img
+                    sizes="
+                      (max-width: 480px) 25vw,
+                      (max-width: 820px) 20vw,
+                      20vw
+                    "
+                    loading="lazy"
+                    src="images/preparacion.jpg?width=220"
+                    alt=""
+                    class="image-cat"
+                  />
                 </picture>
               </div>
               <div class="part-text">
